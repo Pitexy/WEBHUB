@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,500;1,600&display=swap');
+</style>
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 10px; /* = 10px*/
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    width: 100%;
+    max-width: 1200px;
+    min-height: 100px;
+    height: auto;
+    margin: 0 auto;
+}
+
+.header{
+    width: 100%;
+    height: 139px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 2px 4px rgba(23, 23, 23, 0.25);
+}
+.logo{
+    float: left;
+    margin-top: 35px;
+
+}
+.navigation{
+    float: right;
+    padding-top: 56px;
+    padding-bottom: 54px;
+}
+
+.navigation li{
+    list-style: none;
+    display: inline;
+    margin-inline: 50px;
+}
+.navigation a{
+    color: #171717;
+    font-size: 22px;
+}
+.navigation a:active{
+    color: #a43632;
+}
+
+/* Hero section of website */
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 600px;
+    width: 100%;
+}
+.hero__text{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+    flex-basis: 50%;
+}
+.hero__text .heading{
+    color: #a43632;
+    font-size: 42px;
+    font-weight: 700;
+}
+
+.hero__text .subheading{
+    color: #171717;
+}
+
+.hero__text .form{
+    display: flex;
+    position: relative;
+}
+
+.hero__text .form .input{
+    
+    width: 100%;
+    font-size: 18px;
+    margin-top: 40px;
+    color: rgba(23, 23, 23, 0.32);
+    padding: 10px 17px 15px 20px;
+    border-radius: 4px;
+    border: 2px solid #DE9492;
+    
+}
+.hero__text .form .input::placeholder{
+    color: rgba(23, 23, 23, 0.32);
+}
+
+.hero__text .form .btn-getstarted{
+    position: absolute;
+    right: 5px;
+    top: 45px;
+    background-color: #a43632;
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+}
+.hero__text .form .btn-getstarte:hover{
+    background-color: #DE9492;
+}
+.hero__images{
+    flex-basis: 50%;
+    display: flex;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero__images .image1{
+    height: 390px;
+    position: absolute;
+    top: 81px;
+}
+.hero__images .image2{
+    height: 267px;
+    position: absolute;
+    top: 267px;
+    left: 236px;
+}
+
+/* Who we are section */
+
+.who-we-are{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 86px 0;
+
+    background: linear-gradient(119.32deg, #FFFFFF -47.61%, #FDFAF7 129.23%, #FDFAF7 129.23%), #FDFAF7;
+    box-shadow: 0px -2px 4px rgba(23, 23, 23, 0.1);
+}
+.who-we-are .imagebox{
+    flex-basis: 40%;
+
+}
+.who-we-are .textbox{
+    flex-basis: 50%;
+    font-size: 18px;
+    line-height: 200%;
+    color: #171717;
+}
+.who-we-are .text{
+    margin-top: 30px;
+   
+}
+
+
+/* Services section */
+
+.services{
+    width: 100%;
+    height: auto;
+    overflow: auto;
+    margin-top: 101px;
+}
+.services__container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.services__container .servicebox{
+    flex-basis: 28%;
+    border: 2px solid rgba(227, 293, 192, 0.2);
+    filter: drop-shadow/0px 1px 2px rgba(23, 23, 23, 0.1);
+    padding: 30px;
+    border-radius: 4px;
+}
+
+.servicebox .icon{
+    height: 40px;
+}
+.servicebox .heading{
+    margin: 13px 0 6px 0;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+.servicebox .description{
+    font-size: 14px;
+    color: #666666;
+    line-height: 21.6px;
+}
+
+
+/* Generic Style rules */
+
+.custom-heading{
+    font-size: 28px;
+    color: #171717;
+    font-weight: 500;
+    margin-bottom: 18px;
+    position: relative;
+    z-index: 0;
+
+}
+.custom-heading::before{
+   content: ;
+   width: 100%;
+   height: 13px;
+   display: inline;
+   background-color: #FDFAF7;
+   position: absolute;
+   z-index: -1;
+   bottom: 0;
+}
+
+.wb-title{
+    text-align: center;
+}
+
+.wb-subtitle{
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 18px;
+    width: 100%;
+    max-width: 558px;
+}
+
+.wb-textbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
